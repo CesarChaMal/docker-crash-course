@@ -4,18 +4,22 @@
 /dist
 /tmp
 /out-tsc
+/out
+/build
+/classes
 
 # dependencies
 node_modules
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
+*.idea
+*.project
+*.classpath
+*.c9
 *.launch
-.settings/
+*.settings
 *.sublime-workspace
+*.iml
 
 # IDE - VSCode
 .vscode/*
@@ -59,6 +63,7 @@ Thumbs.db
 *.settings
 *.project
 *.mvn
+*.gradle
 mvnw
 target
 *.DS_Store

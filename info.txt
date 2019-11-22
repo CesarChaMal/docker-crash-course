@@ -1,0 +1,41 @@
+docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker logs -f de0be823b0ff68b8e034dffdaea74757479fdaf27a9e741067c6c3c98a66491c
+
+http://localhost:5000/hello-world-bean
+
+docker container ls
+docker container ls -a
+docker container stop c4ab47c86f22
+docker container stop de0be823b0ff
+docker stop $(docker ps -a -q)
+
+docker images
+docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
+docker pull mysql
+docker searh mysql
+docker image history b8fd9553f1f0
+docker image inspect b8fd9553f1f0
+docker image remove b8fd9553f1f0
+
+docker container pause b8fd9553f1f0
+docker container unpause b8fd9553f1f0
+docker container inspect b8fd9553f1f0
+
+docker container kill b8fd9553f1f0
+docker kill $(docker ps -a -q)
+
+docker container prune
+docker events
+
+docker top
+docker top 1f51a3111554
+	
+docker run -p 5000:5000 -m 512m --cpu-quota 50000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+docker system df
+docker network ls
+
