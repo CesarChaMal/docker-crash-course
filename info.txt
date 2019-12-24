@@ -1,9 +1,14 @@
+docker login --username cesarchamal
+b9a40ea5-2215-431f-8001-8b2280758a9c
+
 docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
 docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
 docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
 docker logs -f de0be823b0ff68b8e034dffdaea74757479fdaf27a9e741067c6c3c98a66491c
+docker run -p 1616:1616 python:2.7-alpine
+
 
 http://localhost:5000/hello-world-bean
 
